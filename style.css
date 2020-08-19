@@ -1,0 +1,350 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mukta', sans-serif;
+}
+
+h1{
+    font-size: 75px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 35px;
+    margin: 0;
+}
+
+h3{
+    font-size: 25px;
+    margin: 0;
+}
+
+h4{
+font-size: 20px;
+margin: 0;
+padding-inline-start: 40px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+p{
+    margin: 0;
+}
+
+.butten_black{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    min-width: 140px;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 7px;
+    color: white;
+    background-color: black;
+}
+
+.butten_green{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    min-width: 140px;
+    max-width: 150px;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(101, 185, 22);
+}
+
+.clip{
+    height: 700px;
+    margin-top: -4%;
+    margin-bottom: -20px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 53.5% 95%, 50% 100%, 46.5% 95%, 0 95%);
+}
+
+.arrow_down{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    z-index: 8;
+}
+
+/*menu*/
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    margin: 0 10px;
+    padding: 5px 0;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_søg{
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    margin-top: 0.5%;
+}
+
+.menu_img{
+    position: absolute;
+    pointer-events: none;
+}
+
+#searchbtn{
+    display: flex;
+    justify-content: right;
+    height: 40px;
+    width: 330px;
+    padding-left: 5px;
+    background-image: url(./img/baseline-search-24px.svg);/*<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg> */
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 5px;
+    border-width: 0.5px;
+    border-color: rgb(209, 209, 209);
+}
+
+/*checkbox*/
+#toggle:checked ~ .burger{
+    display: block;
+    top: 55px;
+    position: absolute;
+    z-index: 7;
+}
+
+.checkbox{
+    opacity: 0;
+}
+
+.burger{
+    display: none;
+    height: 400px;
+    width: 300px;
+    padding-top: 40px;
+    padding-right: 200px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+.burger_menu_1del{
+    padding-bottom: 50px;
+}
+
+.burger_menu_2del{
+    margin-top: -68px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    background-color: lightgray;
+}
+
+#arrow {
+    border-right:2px solid black;
+    border-bottom:2px solid black;
+    width:10px;
+    height:10px;
+    transform: rotate(-45deg);
+    margin-top:40px;
+}
+
+ul li {
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.burger li:before{
+    content: '>';
+    color: rgb(101, 202, 0);
+    font-size: 20px;
+    margin-right: 5px;
+ }
+
+/*section 1*/
+.hero_banner{
+    text-align: center;
+    height: 500px;
+    margin-top: 0;
+    padding-top: 15%;
+    color: white;
+    background-image: url(./img/hero-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 6;
+}
+
+/*section 2*/
+.Tjenester{
+    text-align: center;
+    background-color: white;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 5;
+}
+
+.Tjenester_img_box{
+    display: flex;
+    justify-content: center;
+}
+
+/*section3*/
+.Om_Bring{
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 130px;
+    background-color: rgb(255, 215, 38);
+    position: relative;
+    z-index: 4;
+}
+
+.Om_Bring_textbox{
+    display: flex;
+    text-align: start;
+    padding: 50px;
+    margin: 0 20%;
+}
+
+.Om_text1{
+    margin-right: 20px;
+    width: 1500px;
+    font-size: 18px;
+}
+
+.Om_text2{
+    margin-left: 20px;
+    width: 1500px;
+    font-size: 18px;
+}
+
+/*section4*/
+.e_handel{
+    text-align: center;
+    padding-top: 120px;
+    color: white;
+    background-color: rgb(101, 185, 22);
+    position: relative;
+    z-index: 3;
+}
+
+.e_handel p{
+    font-size: 22px;
+    padding: 0 20%;
+}
+
+/*section 5*/
+.Modtagerservice{
+    text-align: center;
+    background-color: white;
+    height: 500px;
+    padding: 0 30%;
+    padding-top: 120px;
+    position: relative;
+    z-index: 2;
+}
+
+/*section 6*/
+.Kundeservice{
+    text-align: center;
+    background-color: rgb(255, 215, 38);
+    padding: 120px;
+    position: relative;
+    z-index: 1;
+}
+
+.Kundeservice li{
+    border: none;
+}
+
+.Kundeservice_mid{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    text-align: start;
+}
+
+.Kundeservice_mid img{
+    height: 450px;
+}
+
+.Kundeservice_mid_text{
+    display: flex;
+    flex-direction: column;
+}
+
+.Kundeservice_mid_text_størelse{
+    width: 32%;
+}
+
+/*section 7*/
+.Søg_job{
+    text-align: center;
+    height: 500px;
+    padding-top: 15%;
+    color: white;
+    background-image: url(./img/budbil1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*footer*/
+footer{
+    text-align: center;
+    margin-top: -3%;
+    padding-top: 120px;
+    color: white;
+    background-color: rgb(51, 51, 51);
+}
+
+.footer_mid{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    text-align: start;
+    margin-bottom: 70px;
+}
+
+.footer_mid h3{
+    color: rgb(101, 185, 22);
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.icons a{
+    height: 90px;
+    width: 90px;
+    padding: 0 10px;
+    color: gray;
+}
+
+.icons i{
+    height: 85px;
+    width: 85%;
+    font-size: 85px;
+}
