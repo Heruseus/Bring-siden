@@ -70,7 +70,7 @@ p{
 }
 
 .clip{
-    height: 700px;
+    height: 500px;
     margin-top: -4%;
     margin-bottom: -20px;
     clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 53.5% 95%, 50% 100%, 46.5% 95%, 0 95%);
@@ -82,17 +82,22 @@ p{
     -webkit-clip-path: polygon(0 0, calc(50% - 29px) 0, 50% 100%, calc(50% + 29px) 0, 100% 0, 100% 100%, 0 100%);
             clip-path: polygon(0 0, calc(50% - 29px) 0, 50% 100%, calc(50% + 29px) 0, 100% 0, 100% 100%, 0 100%);
     background: inherit;
-    top: -29px;
+    left: 0;
+    bottom: 20px;
     width: 100%;
     height: 30px;
+    z-index: 7;
 }
+
 .arrow_down{
     position: absolute;
     top: 10px;
-    right: 20px;
-    height: 50px;
-    width: 50px;
-    background-color: black;
+    right: 18vw;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
     z-index: 8;
 }
 
@@ -195,19 +200,20 @@ ul li {
 /*section 1*/
 .hero_banner{
     text-align: center;
-    height: 500px;
+    background-position: center;
+    background-size: cover;
     margin-top: 0;
     padding-top: 15%;
     color: white;
     background-image: url(./img/hero-02.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
     z-index: 6;
 }
 
 /*section 2*/
 .Tjenester{
+    height: 650px;
     text-align: center;
     background-color: white;
     padding-top: 120px;
@@ -223,6 +229,7 @@ ul li {
 
 /*section3*/
 .Om_Bring{
+    height: 750px;
     text-align: center;
     padding-top: 120px;
     padding-bottom: 130px;
@@ -250,8 +257,13 @@ ul li {
     font-size: 18px;
 }
 
+.Om_text_mellemrom{
+    margin-bottom: 20px;
+}
+
 /*section4*/
 .e_handel{
+    height: 550px;
     text-align: center;
     padding-top: 120px;
     color: white;
@@ -278,6 +290,7 @@ ul li {
 
 /*section 6*/
 .Kundeservice{
+    height: 550px;
     text-align: center;
     background-color: rgb(255, 215, 38);
     padding: 120px;
