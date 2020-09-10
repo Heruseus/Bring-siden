@@ -86,6 +86,8 @@ p{
     -webkit-clip-path: polygon(0 0, calc(50% - 29px) 0, 50% 100%, calc(50% + 29px) 0, 100% 0, 100% 100%, 0 100%);
             clip-path: polygon(0 0, calc(50% - 29px) 0, 50% 100%, calc(50% + 29px) 0, 100% 0, 100% 100%, 0 100%);
     background: inherit;
+    background-size: 103%;
+    background-position-y: 0;
     left: 0;
     top: -29px;
     width: 100%;
@@ -215,12 +217,12 @@ ul li {
 
 /*section 1*/
 .hero_banner{
-    height: 400px;
+    height: 500px;
     text-align: center;
     background-position: center;
     background-size: cover;
     margin-top: 0;
-    padding-top: 15%;
+    padding-top: 185px;
     color: white;
     background-image: url(./img/hero-02.jpg);
     background-repeat: no-repeat;
@@ -232,7 +234,7 @@ ul li {
     height: 650px;
     text-align: center;
     background-color: white;
-    padding-top: 120px;
+    padding-top: 80px;
     padding-bottom: 80px;
     position: relative;
 }
@@ -246,7 +248,7 @@ ul li {
 .Om_Bring{
     height: 750px;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 80px;
     padding-bottom: 130px;
     background-color: rgb(255, 215, 38);
     position: relative;
@@ -279,7 +281,7 @@ ul li {
 .e_handel{
     height: 550px;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 80px;
     color: white;
     background-color: rgb(101, 185, 22);
     position: relative;
@@ -296,7 +298,7 @@ ul li {
     background-color: white;
     height: 500px;
     padding: 0 30%;
-    padding-top: 120px;
+    padding-top: 80px;
     position: relative;
 }
 
@@ -306,6 +308,7 @@ ul li {
     text-align: center;
     background-color: rgb(255, 215, 38);
     padding: 120px;
+    padding-top: 80px;
     position: relative;
 }
 
@@ -327,6 +330,8 @@ ul li {
 .Kundeservice_mid_text{
     display: flex;
     flex-direction: column;
+    padding-top: 80px;
+    padding-right: 20px;
 }
 
 .Kundeservice_mid_text_størelse{
@@ -337,8 +342,9 @@ ul li {
 .Søg_job{
     text-align: center;
     height: 500px;
-    padding-top: 15%;
+    padding-top: 11%;
     color: white;
+    background-position-y: -30px;
     background-image: url(./img/budbil1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -347,7 +353,7 @@ ul li {
 footer{
     text-align: center;
     margin-top: -3%;
-    padding-top: 120px;
+    padding-top: 80px;
     color: white;
     background-color: rgb(51, 51, 51);
 }
